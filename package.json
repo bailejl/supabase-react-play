@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "tailwindcss": "npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch"
+    "tailwindcss": "npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch",
+    "e2e": "npx bddgen && npx playwright test",
+     "e2e-report": "npx playwright show-report"
   },
   "dependencies": {
     "react": "^18.3.1",
